@@ -29,8 +29,10 @@ class Counter extends Component {
           <h1 className={this.state.likes === 0 ? "likes" : this.state.likes % 2 === 0 ? "likes even" : "likes odd"}>Total likes: {this.state.likes} </h1>
           </div>
           <div className="buttons">
-          <button onClick={this.addHandler}>Add like</button>
-          <button onClick={this.removeHandler}>Remove like</button>
+          <button onClick={this.addHandler}>Increase</button>
+          <button onClick={this.removeHandler}>Decrease</button>
+          {/* <button onClick={this.removeHandler}>Add 5</button>
+          <button onClick={this.removeHandler}>Remove 5</button> */}
           <button onClick={this.resetHandler}>Reset likes</button>
           </div>
           {/* <Footer /> */}
