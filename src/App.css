@@ -15,15 +15,71 @@
   align-items: center;
 }
 
-.buttons {
-  text-align: center;
+.even {
+  background-color: rgb(128, 156, 104);
 }
 
+.odd {
+  background-color: rgb(247, 112, 112);
+}
+
+.app {
+  background: #01c0ad;
+  padding: 30px;
+  height: 100vh;
+}
+
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+  margin: auto;
+  justify-content: center;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 3px 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
+  margin-right: 20px;
+  margin-left: 0;
+  border-radius: 3px;
+  display: flex;
+}
+
+form {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+li.todo {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+input, textarea {
+  font-family: Helvetica;
+  border-radius: 12px;
+  width: 200px;
+  border: 1px solid rgb(99, 99, 99);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+
 button {
-  background-color: rgb(223, 133, 30);
+  background-color: rgb(245, 67, 236);
   border: none;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -33,10 +89,9 @@ button {
   border-radius: 12px;
 }
 
-.even {
-  background-color: rgb(128, 156, 104);
-}
-
-.odd {
-  background-color: rgb(247, 112, 112);
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
